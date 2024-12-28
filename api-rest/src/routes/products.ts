@@ -1,4 +1,4 @@
-import { ProductsController } from "@/controllers/products-controller";
+import { ProductsController } from "@/controllers/products-controllers";
 import { myMiddleware } from "@/middlewares/my-middlewares";
 import { Router } from "express";
 
