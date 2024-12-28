@@ -11,5 +11,5 @@ export async function jsonHandler(request, response) {
     request.body = null;
   }
 
-  response.setHeader("Content-Type", "application/json");
+  response.setHeader("Content-Type", "application/json")
 }

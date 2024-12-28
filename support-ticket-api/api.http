@@ -1,2 +1,10 @@
-### CREATE
-POST http://localhost:3333/tickets
+POST http://localhost:3333/tickets 
+Content-Type: application/json
+
+{
+    "equipment": "Computador",
+    "description": "Computador não liga.",
+    "user_name": "Matheus Torres"
+}
+
+###
