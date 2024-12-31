@@ -5,7 +5,14 @@ import z from "zod";
 export class ProductsControlLer {
     async index(req: Request, res: Response, next: NextFunction) {
         try {
-            res.json({ message: "OK" })
+            const { name } = req.query
+
+            const products = await knex<ProductRepository>("products")
+                .select()
+                .whereLike("name", `%${name || ""}%`)
+                .orderBy("name")
+
+            res.status(200).json(products)
         } catch (error) {
             next(error);
         }
