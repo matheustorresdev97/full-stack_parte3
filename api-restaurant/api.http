@@ -11,3 +11,12 @@ Content-Type: application/json
     "name": "Porção de Isca de Peixe",
     "price": 60.00
 }
+
+### 
+PUT http://localhost:3333/products/1
+Content-Type: application/json
+
+{
+    "name": "Porção de batata",
+    "price": 40.00
+}
