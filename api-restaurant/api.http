@@ -45,3 +45,21 @@ GET http://localhost:3333/tables-sessions
 
 ###
 PATCH http://localhost:3333/tables-sessions/3
+
+### orders
+
+POST http://localhost:3333/orders
+Content-Type: application/json
+
+{
+    "table_session_id": 1,
+    "product_id": 1,
+    "quantity": 2
+}
+
+###
+GET http://localhost:3333/orders/table-session/1
+
+
+###
+GET http://localhost:3333/orders/table-session/1/total
